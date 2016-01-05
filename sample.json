@@ -1,5 +1,5 @@
 {
-  "timestamp" : "2016-01-05T06:21:40.456Z",
+  "timestamp" : "2016-01-05T06:59:58.550Z",
   "clusters" : [ {
     "name" : "cluster",
     "displayName" : "Cluster 1",
@@ -467,45 +467,6 @@
             "name" : "yarn_scheduler_maximum_allocation_vcores",
             "value" : "1"
           } ]
-        }
-      } ]
-    }, {
-      "name" : "livy",
-      "type" : "LIVY",
-      "config" : {
-        "items" : [ {
-          "name" : "yarn_service",
-          "value" : "yarn"
-        } ]
-      },
-      "roles" : [ {
-        "name" : "livy-LIVY_SERVER-e899ae6e7815d87763e9105591a44dd6",
-        "type" : "LIVY_SERVER",
-        "hostRef" : {
-          "hostId" : "570a4f40-9274-4cd9-bbee-2488bc82d98f"
-        },
-        "config" : {
-          "items" : [ {
-            "name" : "role_jceks_password",
-            "value" : "38phb027qot9w70zaay4bi53a"
-          } ]
-        },
-        "roleConfigGroupRef" : {
-          "roleConfigGroupName" : "livy-LIVY_SERVER-BASE"
-        }
-      } ],
-      "displayName" : "Livy",
-      "roleConfigGroups" : [ {
-        "name" : "livy-LIVY_SERVER-BASE",
-        "displayName" : "Livy Server Default Group",
-        "roleType" : "LIVY_SERVER",
-        "base" : true,
-        "serviceRef" : {
-          "clusterName" : "cluster",
-          "serviceName" : "livy"
-        },
-        "config" : {
-          "items" : [ ]
         }
       } ]
     }, {
